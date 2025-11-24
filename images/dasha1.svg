@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect width="100%" height="100%" fill="#f8e8ee"/>
+  <text x="50%" y="48%" font-size="36" text-anchor="middle" fill="#d46d7a" font-family="Arial, sans-serif">Фото Даши</text>
+  <text x="50%" y="58%" font-size="20" text-anchor="middle" fill="#a85a66" font-family="Arial, sans-serif">(замените на своё изображение)</text>
+</svg>
