@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HAPPY BIRTHDAY DASHA</title>
+    
+    <!-- Подключаем шрифты (Montserrat для текста, Dancing Script для заголовков) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем стили -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- === МЕНЮ НАВИГАЦИИ === -->
+    <nav class="navbar">
+        <div class="logo">Для Даши на ее 18 ❤️</div>
+        <ul class="nav-links">
+            <li><a href="#home">Главная</a></li>
+            <li><a href="#history">История</a></li>
+            <li><a href="#gallery">Галерея</a></li>
+            <li><a href="#memories">Воспоминания</a></li>
+            <li><a href="#contacts">Контакты</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- === ГЛАВНАЯ (HERO) === -->
+    <header id="home" class="hero-section">
+        <div class="hero-content">
+            <h1>Наши тёплые моменты</h1>
+            <p>Сайт-посвящение моей самой лучшей подруге Дашеньке</p>
+            <a href="#history" class="btn">Смотреть нашу историю</a>
+        </div>
+        <!-- Летающие элементы декора -->
+        <div class="floating-hearts">
+            <span>❤️</span><span>🌸</span><span>✨</span><span>💕</span>
+        </div>
+    </header>
+
+    <!-- === ИСТОРИЯ ЗНАКОМСТВА (ТАЙМЛАЙН) === -->
+    <section id="history" class="section container">
+        <h2 class="section-title">Как это было</h2>
+        <div class="timeline">
+            <!-- Событие 1 -->
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>2021 год</h3>
+                    <p>Наше первое знакомство. Помнишь тот день на 20 как ты пришла играть с нами в волейбол? Мы тогда даже не думали, что станем так близки.</p>
+                </div>
+            </div>
+            <!-- Событие 2 -->
+            <div class="timeline-item right">
+                <div class="content">
+                    <h3>Первое путешествие</h3>
+                    <p>Наша поездка в Питер. Мы смеялись до утра и промокли под дождём. Это было незабываемо!</p>
+                </div>
+            </div>
+            <!-- Событие 3 -->
+            <div class="timeline-item left">
+                <div class="content">
+                    <h3>Наши дни 2025</h3>
+                    <p>Столько лет прошло, а мы всё так же рядом. Спасибо тебе за поддержку и теплоту.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === ГАЛЕРЕЯ (MASONRY / TABS) === -->
+    <section id="gallery" class="section bg-color">
+        <div class="container">
+            <h2 class="section-title">Фотоальбом</h2>
+            
+            <!-- Кнопки фильтров -->
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">Все</button>
+                <button class="filter-btn" data-filter="school">Только мы</button>
+                <button class="filter-btn" data-filter="travel">Наши совместные хаты</button>
+                <button class="filter-btn" data-filter="selfie">Легендарное трио чунгачкуки</button>
+                <button class="filter-btn" data-filter="funny">Смешное</button>
+            </div>
+
+            <!-- Сетка фотографий -->
+            <!-- ЗАМЕНИТЕ src НА ВАШИ ФОТО -->
+            <div class="gallery-grid">
+                <div class="gallery-item" data-category="school">
+                    <img src="https://via.placeholder.com/400x300/FFC0CB/ffffff?text=Photo+1" alt="Фото">
+                </div>
+                <div class="gallery-item" data-category="travel">
+                    <img src="https://via.placeholder.com/300x400/87CEFA/ffffff?text=Photo+2" alt="Фото">
+                </div>
+                <div class="gallery-item" data-category="selfie">
+                    <img src="https://via.placeholder.com/400x400/FFFACD/ffffff?text=Photo+3" alt="Фото">
+                </div>
+                <div class="gallery-item" data-category="funny">
+                    <img src="https://via.placeholder.com/350x250/FFDAB9/ffffff?text=Photo+4" alt="Фото">
+                </div>
+                <div class="gallery-item" data-category="travel">
+                    <img src="https://via.placeholder.com/400x300/E6E6FA/ffffff?text=Photo+5" alt="Фото">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- === ВИДЕО И ДОСТИЖЕНИЯ === -->
+    <section id="memories" class="section container">
+        <h2 class="section-title">Достижения дружбы</h2>
+        
+        <div class="achievements-grid">
+            <div class="card">
+                <div class="icon">☕</div>
+                <h3>1000+</h3>
+                <p>Чашек кофе выпито</p>
+            </div>
+            <div class="card">
+                <div class="icon">✈️</div>
+                <h3>5</h3>
+                <p>Городов посетили</p>
+            </div>
+            <div class="card">
+                <div class="icon">💌</div>
+                <h3>Бесценно</h3>
+                <p>Наших секретиков</p>
+            </div>
+        </div>
+
+        <div class="video-block">
+            <h3>Наше видео</h3>
+            <!-- Можно вставить iframe с YouTube или тег <video> -->
+            <div class="video-wrapper">
+                <!-- Пример локального видео: <video controls src="video.mp4"></video> -->
+                <p style="padding: 50px; background: white; border-radius: 15px;">Место для твоего видеопоздравления</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- === КОНТАКТЫ / ПОЗДРАВЛЕНИЕ === -->
+    <footer id="contacts">
+        <div class="footer-content">
+            <h2>Люблю тебя! ❤️</h2>
+            <p>Ты самый светлый человечек в моей жизни.</p>
+            <p>Пиши, звони — я всегда рядом.</p>
+            <div class="socials">
+                <a href="https://t.me/molly_mkk">Telegram</a>
+                <a href="https://www.instagram.com/aleksanndrovna_?igsh=MTVwcjNwcnRweGUxdw%3D%3D&utm_source=qr">Instagram</a>
+                <a href="https://wa.me/87076020820">WhatsApp</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- МОДАЛЬНОЕ ОКНО ДЛЯ ФОТО -->
+    <div class="modal" id="imgModal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="modalImg">
+        <div id="caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
